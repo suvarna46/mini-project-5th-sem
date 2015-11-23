@@ -93,14 +93,14 @@ int main()
         finaladdr=locctr;
     }
     length=(finaladdr-startaddr);
-    printf("The SYMTAB is as follows:\n\n\n\t|-----\t|-------|\n");
-    printf("\t|LABEL\t|ADDRESS|\n");
-    printf("\t|-----\t|-------|\n");
+    printf("The SYMTAB is as follows:\n\n\n\t\t\n");
+    printf("LABEL\tADDRESS\n");
+    printf("\t\t\n");
     for(j=0;j<i;j++)
     {
-        printf("\t|%s\t|%d   |\n",symbol[j].symbol_name,symbol[j].symbol_addr);
+        printf("\t%s\t%d\n",symbol[j].symbol_name,symbol[j].symbol_addr);
     }
-    printf("\t|-----\t|-------|\n");
+    printf("\t\t\n");
     printf("\n The program length is=%d",length);
      return(0);
 
